@@ -1,0 +1,100 @@
+2018-06-04T02:21:19.219290+00:00 app[web.1]: [2018-06-04 02:21:19] INFO  WEBrick::HTTPServer#start done.
+2018-06-04T02:21:19.219298+00:00 app[web.1]: bundler: failed to load command: rackup (/app/vendor/bundle/ruby/2.3.0/bin/rackup)
+2018-06-04T02:21:19.219301+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:177:in `block in start'
+2018-06-04T02:21:19.219299+00:00 app[web.1]: SignalException: SIGTERM
+2018-06-04T02:21:19.219295+00:00 app[web.1]: Before finalize
+2018-06-04T02:21:19.219300+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:177:in `select'
+2018-06-04T02:21:19.219303+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:33:in `start'
+2018-06-04T02:21:19.219297+00:00 app[web.1]: Before create
+2018-06-04T02:21:19.219306+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/server.rb:297:in `start'
+2018-06-04T02:21:19.219304+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:164:in `start'
+2018-06-04T02:21:19.219305+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/handler/webrick.rb:34:in `run'
+2018-06-04T02:21:19.219307+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/server.rb:148:in `start'
+2018-06-04T02:21:19.219308+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/bin/rackup:4:in `<top (required)>'
+2018-06-04T02:21:19.219309+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/rackup:22:in `load'
+2018-06-04T02:21:19.219310+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/rackup:22:in `<top (required)>'
+2018-06-04T02:21:19.410030+00:00 heroku[web.1]: Process exited with status 1
+2018-06-04T02:21:17.562545+00:00 app[api]: Release v182 created by user hexin821111@gmail.com
+2018-06-04T02:21:21.034023+00:00 heroku[web.1]: Starting process with command `bundle exec rackup config.ru -p 51404`
+2018-06-04T02:21:24.360413+00:00 heroku[web.1]: State changed from starting to up
+2018-06-04T02:22:08.070864+00:00 heroku[router]: at=info method=GET path="/" host=gentle-peak-36567.herokuapp.com request_id=6bd77e66-20c6-4cdf-94e7-04c4a04cb533 fwd="73.158.55.103" dyno=web.1 connect=0ms service=27ms status=200 bytes=1480 protocol=https
+2018-06-04T02:22:08.069028+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:22:08 +0000] "GET / HTTP/1.1" 200 674 0.0121
+2018-06-04T02:22:08.396126+00:00 heroku[router]: at=info method=GET path="/style.css" host=gentle-peak-36567.herokuapp.com request_id=58cfe81d-39d2-43ae-9c7f-3521ba94b8f9 fwd="73.158.55.103" dyno=web.1 connect=0ms service=28ms status=200 bytes=775 protocol=https
+2018-06-04T02:22:21.690049+00:00 heroku[router]: at=info method=GET path="/video" host=gentle-peak-36567.herokuapp.com request_id=3565067d-4537-4599-b92e-2b3ebc875901 fwd="73.158.55.103" dyno=web.1 connect=0ms service=7ms status=200 bytes=981 protocol=https
+2018-06-04T02:22:21.918643+00:00 heroku[router]: at=info method=GET path="/video/Tenis.mp4" host=gentle-peak-36567.herokuapp.com request_id=9cb06b05-2230-4f6f-8df6-6f8be22bfb69 fwd="73.158.55.103" dyno=web.1 connect=0ms service=15ms status=404 bytes=883 protocol=https
+2018-06-04T02:22:22.014590+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:22:22 +0000] "GET /video/Tenis.mp4 HTTP/1.1" 404 581 0.0015
+2018-06-04T02:22:22.126560+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:22:22 +0000] "GET /images/logo.png HTTP/1.1" 404 581 0.0015
+2018-06-04T02:26:20.000000+00:00 app[api]: Build started by user hexin821111@gmail.com
+2018-06-04T02:26:32.904913+00:00 heroku[web.1]: Restarting
+2018-06-04T02:26:32.905285+00:00 heroku[web.1]: State changed from up to starting
+2018-06-04T02:26:32.000000+00:00 app[api]: Build succeeded
+2018-06-04T02:26:32.411507+00:00 app[api]: Release v183 created by user hexin821111@gmail.com
+2018-06-04T02:26:33.658688+00:00 app[web.1]: [2018-06-04 02:26:33] FATAL SignalException: SIGTERM
+2018-06-04T02:26:33.658710+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:177:in `select'
+2018-06-04T02:26:33.658720+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/handler/webrick.rb:34:in `run'
+2018-06-04T02:26:33.658729+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/rackup:22:in `load'
+2018-06-04T02:26:33.658715+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:177:in `block in start'
+2018-06-04T02:26:33.658717+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:33:in `start'
+2018-06-04T02:26:33.658731+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/rackup:22:in `<top (required)>'
+2018-06-04T02:26:33.658741+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+2018-06-04T02:26:33.658719+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:164:in `start'
+2018-06-04T02:26:33.658728+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/bin/rackup:4:in `<top (required)>'
+2018-06-04T02:26:33.658734+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/cli/exec.rb:74:in `kernel_load'
+2018-06-04T02:26:33.658737+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/cli.rb:360:in `exec'
+2018-06-04T02:26:33.658722+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/server.rb:297:in `start'
+2018-06-04T02:26:33.658733+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/cli/exec.rb:74:in `load'
+2018-06-04T02:26:33.658726+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/server.rb:148:in `start'
+2018-06-04T02:26:33.658739+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+2018-06-04T02:26:33.658745+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor/base.rb:444:in `start'
+2018-06-04T02:26:33.658750+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/friendly_errors.rb:121:in `with_friendly_errors'
+2018-06-04T02:26:33.658736+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/cli/exec.rb:27:in `run'
+2018-06-04T02:26:33.658742+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/vendor/thor/lib/thor.rb:369:in `dispatch'
+2018-06-04T02:26:33.658747+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/cli.rb:10:in `start'
+2018-06-04T02:26:33.658754+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/bundle:22:in `<main>'
+2018-06-04T02:26:33.658748+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/exe/bundle:30:in `block in <top (required)>'
+2018-06-04T02:26:33.658751+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/exe/bundle:22:in `<top (required)>'
+2018-06-04T02:26:33.658756+00:00 app[web.1]: [2018-06-04 02:26:33] INFO  going to shutdown ...
+2018-06-04T02:26:33.658765+00:00 app[web.1]: Before finalize
+2018-06-04T02:26:33.658769+00:00 app[web.1]: SignalException: SIGTERM
+2018-06-04T02:26:33.658753+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/bundle:22:in `load'
+2018-06-04T02:26:33.658744+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/bundler-1.15.2/lib/bundler/cli.rb:20:in `dispatch'
+2018-06-04T02:26:33.658782+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/bin/rackup:4:in `<top (required)>'
+2018-06-04T02:26:33.658762+00:00 app[web.1]: DATABASE_URL=postgres://gabanvkdmbkpwc:a1163ea95c3358fd5f5a7b5b8b8648245fa01944e3f8102ef14525ca0511e975@ec2-23-23-247-222.compute-1.amazonaws.com:5432/d9a5opq1o0oa6s
+2018-06-04T02:26:33.658763+00:00 app[web.1]: After setup
+2018-06-04T02:26:33.658766+00:00 app[web.1]: Before create
+2018-06-04T02:26:33.658768+00:00 app[web.1]: bundler: failed to load command: rackup (/app/vendor/bundle/ruby/2.3.0/bin/rackup)
+2018-06-04T02:26:33.658771+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:177:in `select'
+2018-06-04T02:26:33.658774+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:33:in `start'
+2018-06-04T02:26:33.658759+00:00 app[web.1]: Before setup
+2018-06-04T02:26:33.658775+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:164:in `start'
+2018-06-04T02:26:33.658772+00:00 app[web.1]: /app/vendor/ruby-2.3.7/lib/ruby/2.3.0/webrick/server.rb:177:in `block in start'
+2018-06-04T02:26:33.658777+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/handler/webrick.rb:34:in `run'
+2018-06-04T02:26:33.658785+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/rackup:22:in `<top (required)>'
+2018-06-04T02:26:33.658779+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/server.rb:297:in `start'
+2018-06-04T02:26:33.658783+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/bin/rackup:22:in `load'
+2018-06-04T02:26:33.658757+00:00 app[web.1]: [2018-06-04 02:26:33] INFO  WEBrick::HTTPServer#start done.
+2018-06-04T02:26:33.658780+00:00 app[web.1]: /app/vendor/bundle/ruby/2.3.0/gems/rack-2.0.5/lib/rack/server.rb:148:in `start'
+2018-06-04T02:26:33.645231+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2018-06-04T02:26:33.805085+00:00 heroku[web.1]: Process exited with status 1
+2018-06-04T02:26:38.227606+00:00 app[web.1]: [2018-06-04 02:26:38] INFO  WEBrick 1.3.1
+2018-06-04T02:26:38.227634+00:00 app[web.1]: [2018-06-04 02:26:38] INFO  ruby 2.3.7 (2018-03-28) [x86_64-linux]
+2018-06-04T02:26:38.228126+00:00 app[web.1]: [2018-06-04 02:26:38] INFO  WEBrick::HTTPServer#start: pid=4 port=13667
+2018-06-04T02:26:38.951693+00:00 heroku[web.1]: State changed from starting to up
+2018-06-04T02:26:56.608598+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:26:56 +0000] "GET / HTTP/1.1" 200 674 0.0148
+2018-06-04T02:26:56.609072+00:00 heroku[router]: at=info method=GET path="/" host=gentle-peak-36567.herokuapp.com request_id=7997dabf-ea3a-4ad7-85a7-eb173f9154af fwd="73.158.55.103" dyno=web.1 connect=0ms service=30ms status=200 bytes=1480 protocol=https
+2018-06-04T02:26:56.879210+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:26:56 +0000] "GET /style.css HTTP/1.1" 200 560 0.0157
+2018-06-04T02:26:57.125075+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:26:57 +0000] "GET /images/logo.png HTTP/1.1" 404 581 0.0021
+2018-06-04T02:27:01.942612+00:00 heroku[router]: at=info method=GET path="/video" host=gentle-peak-36567.herokuapp.com request_id=201f137a-43a8-436f-9f80-e7110e51eeb3 fwd="73.158.55.103" dyno=web.1 connect=1ms service=5ms status=200 bytes=981 protocol=https
+2018-06-04T02:27:01.941289+00:00 app[web.1]: Before setup
+2018-06-04T02:27:01.941307+00:00 app[web.1]: DATABASE_URL=postgres://gabanvkdmbkpwc:a1163ea95c3358fd5f5a7b5b8b8648245fa01944e3f8102ef14525ca0511e975@ec2-23-23-247-222.compute-1.amazonaws.com:5432/d9a5opq1o0oa6s
+2018-06-04T02:27:01.941309+00:00 app[web.1]: After setup
+2018-06-04T02:27:01.941311+00:00 app[web.1]: Before finalize
+2018-06-04T02:27:01.941312+00:00 app[web.1]: Before create
+2018-06-04T02:27:01.941314+00:00 app[web.1]: 1
+2018-06-04T02:27:01.942408+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:27:01 +0000] "GET /video HTTP/1.1" 200 703 0.0018
+2018-06-04T02:27:02.045063+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:27:02 +0000] "GET /style.css HTTP/1.1" 200 560 0.0007
+2018-06-04T02:27:02.057998+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:27:02 +0000] "GET /video/Tenis.mp4 HTTP/1.1" 404 581 0.0008
+2018-06-04T02:27:02.158871+00:00 app[web.1]: 73.158.55.103 - - [04/Jun/2018:02:27:02 +0000] "GET /images/logo.png HTTP/1.1" 404 581 0.0010
+2018-06-04T02:27:02.156408+00:00 heroku[router]: at=info method=GET path="/images/logo.png" host=gentle-peak-36567.herokuapp.com request_id=5c4d0f5b-571f-43f4-8fe9-cb761c228e6f fwd="73.158.55.103" dyno=web.1 connect=0ms service=4ms status=404 bytes=883 protocol=https
+2018-06-04T02:27:02.045320+00:00 heroku[router]: at=info method=GET path="/style.css" host=gentle-peak-36567.herokuapp.com request_id=5cf6815f-125d-4489-a0db-4bb983548f6a fwd="73.158.55.103" dyno=web.1 connect=1ms service=4ms status=200 bytes=775 protocol=https
+2018-06-04T02:27:02.055316+00:00 heroku[router]: at=info method=GET path="/video/Tenis.mp4" host=gentle-peak-36567.herokuapp.com request_id=b43492cd-6c03-4b59-aeec-c9a590cfe09b fwd="73.158.55.103" dyno=web.1 connect=0ms service=3ms status=404 bytes=883 protocol=https

@@ -1,0 +1,4 @@
+<p>Name: <%= @selected_student.firstname %> <%= @selected_student.lastname %>, Birthday: <%= @selected_student.birthday %>, Address: <%= @selected_student.address %>, ID: <%= @selected_student.studentID %></p>
+<li><a href='/'>Go back</a>  </li>
+<li><a href='/add_students/<%= @selected_student.id %>/edit'>Edit</a>  </li>
+<li><a href='/delete_student/<%= @selected_student.id %>'>Delete</a>  </li>

@@ -1,0 +1,9 @@
+Comments 
+<ul>
+<% @comments.each do |comment| %>
+<li><a href="/comment/<%= comment.id %>"> <%= comment.subject %>    <%= comment.created_at %></li></br>
+<% end %>
+</ul>
+<ul>
+<li><a href='/add_comments'>Create a new comment</a>  </li>
+</ul>

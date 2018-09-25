@@ -1,0 +1,9 @@
+<% if @error %>
+  <div class="error">Login failed</div>
+<% end %>   
+<p>Please login</p>
+<form action="/login" method='post'>
+  username: <input type='text' name='username'></input></br>
+  password: <input type='text' name='password'></input></br>
+  <input type='submit' name='submit'></input>
+</form>

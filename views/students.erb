@@ -1,0 +1,7 @@
+Student list
+<% @students.each do |student| %>
+<a href="/student/<%= student.id %>"><%= student.firstname %> <%= student.lastname %> <%= student.address %></li>
+<% end %>
+<ul>
+<li><a href='/add_students'>Add new student</a>  </li>
+</ul>
